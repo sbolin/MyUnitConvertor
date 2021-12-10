@@ -21,6 +21,11 @@
 		155F9868276118C600B75764 /* SpeedConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9867276118C600B75764 /* SpeedConvertorView.swift */; };
 		155F986B2761266E00B75764 /* SpeedUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F986A2761266E00B75764 /* SpeedUnit.swift */; };
 		155F986D2761268D00B75764 /* SpeedConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F986C2761268D00B75764 /* SpeedConversion.swift */; };
+		157FF9592763C34E004116B9 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF9582763C34E004116B9 /* MassUnit.swift */; };
+		157FF95B2763D3B2004116B9 /* MassConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF95A2763D3B2004116B9 /* MassConversion.swift */; };
+		157FF95D2763D414004116B9 /* MassConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF95C2763D414004116B9 /* MassConvertorView.swift */; };
+		157FF95F2763D421004116B9 /* MassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF95E2763D421004116B9 /* MassCell.swift */; };
+		157FF9612763D925004116B9 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF9602763D925004116B9 /* TitleView.swift */; };
 		15C308072763269600D34C02 /* DistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C308062763269600D34C02 /* DistanceCell.swift */; };
 		15C3080927632AC900D34C02 /* TempCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3080827632AC900D34C02 /* TempCell.swift */; };
 		15C3080B27632C7B00D34C02 /* SpeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3080A27632C7B00D34C02 /* SpeedCell.swift */; };
@@ -44,6 +49,12 @@
 		155F98692761236900B75764 /* Speed Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Speed Conversion.md"; sourceTree = "<group>"; };
 		155F986A2761266E00B75764 /* SpeedUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedUnit.swift; sourceTree = "<group>"; };
 		155F986C2761268D00B75764 /* SpeedConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConversion.swift; sourceTree = "<group>"; };
+		157FF9572763BBD4004116B9 /* Mass Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Mass Conversion.md"; sourceTree = "<group>"; };
+		157FF9582763C34E004116B9 /* MassUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassUnit.swift; sourceTree = "<group>"; };
+		157FF95A2763D3B2004116B9 /* MassConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassConversion.swift; sourceTree = "<group>"; };
+		157FF95C2763D414004116B9 /* MassConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassConvertorView.swift; sourceTree = "<group>"; };
+		157FF95E2763D421004116B9 /* MassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassCell.swift; sourceTree = "<group>"; };
+		157FF9602763D925004116B9 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		15C308062763269600D34C02 /* DistanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCell.swift; sourceTree = "<group>"; };
 		15C3080827632AC900D34C02 /* TempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCell.swift; sourceTree = "<group>"; };
 		15C3080A27632C7B00D34C02 /* SpeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCell.swift; sourceTree = "<group>"; };
@@ -108,8 +119,11 @@
 				155F986C2761268D00B75764 /* SpeedConversion.swift */,
 				155F98602760C83700B75764 /* TempUnit.swift */,
 				155F98622760CC9E00B75764 /* TempConversion.swift */,
+				157FF9582763C34E004116B9 /* MassUnit.swift */,
+				157FF95A2763D3B2004116B9 /* MassConversion.swift */,
 				154A8E3E275F65230024D47A /* ValidatedDecimal.swift */,
 				155F98692761236900B75764 /* Speed Conversion.md */,
+				157FF9572763BBD4004116B9 /* Mass Conversion.md */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -124,7 +138,10 @@
 				15C3080827632AC900D34C02 /* TempCell.swift */,
 				155F9867276118C600B75764 /* SpeedConvertorView.swift */,
 				15C3080A27632C7B00D34C02 /* SpeedCell.swift */,
+				157FF95C2763D414004116B9 /* MassConvertorView.swift */,
+				157FF95E2763D421004116B9 /* MassCell.swift */,
 				15C3080C2763334200D34C02 /* TableHeaderView.swift */,
+				157FF9602763D925004116B9 /* TitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				154A8E42275F65660024D47A /* DistanceUnit.swift in Sources */,
+				157FF95B2763D3B2004116B9 /* MassConversion.swift in Sources */,
 				154A8E3F275F65230024D47A /* ValidatedDecimal.swift in Sources */,
 				155F98632760CC9E00B75764 /* TempConversion.swift in Sources */,
 				154A8E3B275F63790024D47A /* DistanceConvertorView.swift in Sources */,
@@ -213,6 +231,10 @@
 				155F98652760CD1C00B75764 /* TempConvertorView.swift in Sources */,
 				15C3080D2763334200D34C02 /* TableHeaderView.swift in Sources */,
 				15C3080B27632C7B00D34C02 /* SpeedCell.swift in Sources */,
+				157FF9592763C34E004116B9 /* MassUnit.swift in Sources */,
+				157FF95D2763D414004116B9 /* MassConvertorView.swift in Sources */,
+				157FF9612763D925004116B9 /* TitleView.swift in Sources */,
+				157FF95F2763D421004116B9 /* MassCell.swift in Sources */,
 				155F9868276118C600B75764 /* SpeedConvertorView.swift in Sources */,
 				155F98612760C83700B75764 /* TempUnit.swift in Sources */,
 			);

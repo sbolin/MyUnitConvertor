@@ -10,8 +10,6 @@ import SwiftUI
 struct TempConvertorView: View {
     @State var startTempUnit: TempUnit = .fahrenheit
     @State var endTempUnit: TempUnit = .celcius
-    //    @State var startValueString = ""
-    //    @State var startValue: Double = 0.0
     @ObservedObject var startValue = ValidatedDecimal()
 
     @State var conversionHistory: [TempConversion] = []
@@ -25,7 +23,6 @@ struct TempConvertorView: View {
 
             HStack {
                 Text("Temperature:")
-                //                TextField("", value: $startValue, format: .number, prompt: Text("Temperature to Convert"))
                 TextField("e.g. 5\(Locale.current.decimalSeparator!)3", text: $startValue.valueString)
                     .keyboardType(.decimalPad)
                 VStack(spacing: 0) {

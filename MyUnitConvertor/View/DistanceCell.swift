@@ -20,11 +20,8 @@ struct DistanceCell: View {
             Text("To: \(toDistance)")
         }
         .font(.callout)
+        .foregroundColor(.secondary)
         .frame(width: UIScreen.main.bounds.width - 48)
-    }
-
-    func printConversion(conversion: DistanceConversion) -> String {
-        return formattedDistanceValue(distance: conversion.startValue, unit: conversion.startDistanceUnit) + " -> " + formattedDistanceValue(distance: conversion.endValue, unit: conversion.endDistanceUnit)
     }
 
     func formattedDistanceValue(distance: Double, unit: DistanceUnit) -> String {

@@ -24,10 +24,6 @@ struct TempCell: View {
         .frame(width: UIScreen.main.bounds.width - 48)
     }
 
-    func printConversion(conversion: TempConversion) -> String {
-        return formattedDistanceValue(distance: conversion.startValue, unit: conversion.startTempUnit) + " -> " + formattedDistanceValue(distance: conversion.endValue, unit: conversion.endTempUnit)
-    }
-
     func formattedDistanceValue(distance: Double, unit: TempUnit) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal

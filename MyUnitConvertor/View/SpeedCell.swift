@@ -24,10 +24,6 @@ struct SpeedCell: View {
         .frame(width: UIScreen.main.bounds.width - 48)
     }
 
-    func printConversion(conversion: SpeedConversion) -> String {
-        return formattedDistanceValue(distance: conversion.startValue, unit: conversion.startSpeedUnit) + " -> " + formattedDistanceValue(distance: conversion.endValue, unit: conversion.endSpeedUnit)
-    }
-
     func formattedDistanceValue(distance: Double, unit: SpeedUnit) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal

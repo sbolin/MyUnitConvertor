@@ -10,8 +10,6 @@ import SwiftUI
 struct SpeedConvertorView: View {
     @State var startSpeedUnit: SpeedUnit = .kmh
     @State var endSpeedUnit: SpeedUnit = .mih
-//    @State var startValueString = ""
-//    @State var startValue: Double = 0.0
     @ObservedObject var startValue = ValidatedDecimal()
 
     @State var conversionHistory: [SpeedConversion] = []

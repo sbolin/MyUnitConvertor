@@ -1,36 +1,36 @@
 //
-//  UnitConverter.swift
-//  TextFieldCalcs
+//  MassConvertorView.swift
+//  MyUnitConvertor
 //
-//  Created by Scott Bolin on 28-Nov-21.
+//  Created by Scott Bolin on 11-Dec-21.
 //
 
 import SwiftUI
 
-struct DistanceConvertorView: View {
-    @State var startDistanceUnit: DistanceUnit = .kilometer
-    @State var endDistanceUnit: DistanceUnit = .mile
+struct MassConvertorView: View {
+    @State var startMassUnit: MassUnit = .kilogram
+    @State var endMassUnit: MassUnit = .pound
     @ObservedObject var startValue = ValidatedDecimal()
 
-    @State var conversionHistory: [DistanceConversion] = []
+    @State var conversionHistory: [MassConversion] = []
 
     var body: some View {
         VStack {
-            Text("Distance Conversion")
+            Text("Mass Conversion")
                 .font(.title3)
                 .bold()
                 .padding()
 
             // main conversion view
             HStack {
-                Text("Distance:")
+                Text("Mass:")
                 TextField("e.g. 5\(Locale.current.decimalSeparator!)3", text: $startValue.valueString)
                     .keyboardType(.decimalPad)
                 VStack(spacing: 0) {
                     Text("From")
                         .font(.footnote)
-                    Picker("\(startDistanceUnit.rawValue)", selection: $startDistanceUnit) {
-                        ForEach(DistanceUnit.allCases, id: \.self) { unit in
+                    Picker("\(startMassUnit.rawValue)", selection: $startMassUnit) {
+                        ForEach(MassUnit.allCases, id: \.self) { unit in
                             Text(unit.rawValue)
                         }
                     }
@@ -40,8 +40,8 @@ struct DistanceConvertorView: View {
                         .padding(.bottom, 4)
                     Text("To")
                         .font(.footnote)
-                    Picker("\(endDistanceUnit.rawValue)", selection: $endDistanceUnit) {
-                        ForEach(DistanceUnit.allCases, id: \.self) { unit in
+                    Picker("\(endMassUnit.rawValue)", selection: $endMassUnit) {
+                        ForEach(MassUnit.allCases, id: \.self) { unit in
                             Text(unit.rawValue)
                         }
                     }
@@ -69,25 +69,25 @@ struct DistanceConvertorView: View {
                 TableHeaderView()
                 ForEach(conversionHistory.reversed()) { conversion in
                     VStack(alignment: .leading) {
-                        DistanceCell(conversion: conversion)
+                        MassCell(conversion: conversion)
                     }
                 }
             } // VStack
         }
     }
 
-    private func convertUnit(valueToConvert: Double, fromUnit: DistanceUnit, toUnit: DistanceUnit) -> Double {
-        return valueToConvert * fromUnit.conversionFactorToMeter / toUnit.conversionFactorToMeter
+    private func convertUnit(valueToConvert: Double, fromUnit: MassUnit, toUnit: MassUnit) -> Double {
+        return valueToConvert * fromUnit.conversionFactorToKilogram / toUnit.conversionFactorToKilogram
     }
 
     private func saveConversion() {
-        var conversion = DistanceConversion()
+        var conversion = MassConversion()
 
         conversion.id = UUID()
-        conversion.startDistanceUnit = startDistanceUnit
-        conversion.endDistanceUnit = endDistanceUnit
+        conversion.startMassUnit = startMassUnit
+        conversion.endMassUnit = endMassUnit
         conversion.startValue = startValue.decimalValue //Double(startValueString) ?? 0.0
-        conversion.endValue = convertUnit(valueToConvert: conversion.startValue, fromUnit: startDistanceUnit, toUnit: endDistanceUnit)
+        conversion.endValue = convertUnit(valueToConvert: conversion.startValue, fromUnit: startMassUnit, toUnit: endMassUnit)
         conversionHistory.append(conversion)
     }
 
@@ -96,8 +96,8 @@ struct DistanceConvertorView: View {
     }
 }
 
-struct UnitConverter_Previews: PreviewProvider {
+struct MassConvertorView_Previews: PreviewProvider {
     static var previews: some View {
-        DistanceConvertorView()
+        MassConvertorView()
     }
 }
