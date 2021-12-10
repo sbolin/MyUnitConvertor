@@ -48,6 +48,7 @@
 		15C3080827632AC900D34C02 /* TempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCell.swift; sourceTree = "<group>"; };
 		15C3080A27632C7B00D34C02 /* SpeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCell.swift; sourceTree = "<group>"; };
 		15C3080C2763334200D34C02 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		15C3080E2763372600D34C02 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				154A8E40275F65500024D47A /* Units */,
 				154A8E30275F63620024D47A /* Assets.xcassets */,
 				154A8E32275F63620024D47A /* Preview Content */,
+				15C3080E2763372600D34C02 /* TODO.md */,
 			);
 			path = MyUnitConvertor;
 			sourceTree = "<group>";
