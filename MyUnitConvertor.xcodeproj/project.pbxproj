@@ -13,6 +13,10 @@
 		154A8E3B275F63790024D47A /* DistanceConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E3A275F63790024D47A /* DistanceConvertorView.swift */; };
 		154A8E3F275F65230024D47A /* ValidatedDecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E3E275F65230024D47A /* ValidatedDecimal.swift */; };
 		154A8E42275F65660024D47A /* DistanceUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E41275F65660024D47A /* DistanceUnit.swift */; };
+		1551924F276B48C20039505D /* VolumeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551924E276B48C20039505D /* VolumeUnit.swift */; };
+		15519251276B5D2B0039505D /* VolumeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519250276B5D2B0039505D /* VolumeConversion.swift */; };
+		15519253276B7B100039505D /* VolumeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519252276B7B100039505D /* VolumeCell.swift */; };
+		15519255276B7D200039505D /* VolumeConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519254276B7D200039505D /* VolumeConvertorView.swift */; };
 		155F985D2760C62F00B75764 /* DistanceConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F985C2760C62F00B75764 /* DistanceConversion.swift */; };
 		155F985F2760C6B200B75764 /* ConvertorViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F985E2760C6B200B75764 /* ConvertorViews.swift */; };
 		155F98612760C83700B75764 /* TempUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F98602760C83700B75764 /* TempUnit.swift */; };
@@ -40,6 +44,11 @@
 		154A8E3A275F63790024D47A /* DistanceConvertorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceConvertorView.swift; sourceTree = "<group>"; };
 		154A8E3E275F65230024D47A /* ValidatedDecimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedDecimal.swift; sourceTree = "<group>"; };
 		154A8E41275F65660024D47A /* DistanceUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceUnit.swift; sourceTree = "<group>"; };
+		1551924D276B2D600039505D /* Volumn Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Volumn Conversion.md"; sourceTree = "<group>"; };
+		1551924E276B48C20039505D /* VolumeUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeUnit.swift; sourceTree = "<group>"; };
+		15519250276B5D2B0039505D /* VolumeConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConversion.swift; sourceTree = "<group>"; };
+		15519252276B7B100039505D /* VolumeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeCell.swift; sourceTree = "<group>"; };
+		15519254276B7D200039505D /* VolumeConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConvertorView.swift; sourceTree = "<group>"; };
 		155F985C2760C62F00B75764 /* DistanceConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConversion.swift; sourceTree = "<group>"; };
 		155F985E2760C6B200B75764 /* ConvertorViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertorViews.swift; sourceTree = "<group>"; };
 		155F98602760C83700B75764 /* TempUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempUnit.swift; sourceTree = "<group>"; };
@@ -121,9 +130,12 @@
 				155F98622760CC9E00B75764 /* TempConversion.swift */,
 				157FF9582763C34E004116B9 /* MassUnit.swift */,
 				157FF95A2763D3B2004116B9 /* MassConversion.swift */,
+				1551924E276B48C20039505D /* VolumeUnit.swift */,
+				15519250276B5D2B0039505D /* VolumeConversion.swift */,
 				154A8E3E275F65230024D47A /* ValidatedDecimal.swift */,
 				155F98692761236900B75764 /* Speed Conversion.md */,
 				157FF9572763BBD4004116B9 /* Mass Conversion.md */,
+				1551924D276B2D600039505D /* Volumn Conversion.md */,
 			);
 			path = Units;
 			sourceTree = "<group>";
@@ -140,6 +152,8 @@
 				15C3080A27632C7B00D34C02 /* SpeedCell.swift */,
 				157FF95C2763D414004116B9 /* MassConvertorView.swift */,
 				157FF95E2763D421004116B9 /* MassCell.swift */,
+				15519254276B7D200039505D /* VolumeConvertorView.swift */,
+				15519252276B7B100039505D /* VolumeCell.swift */,
 				15C3080C2763334200D34C02 /* TableHeaderView.swift */,
 				157FF9602763D925004116B9 /* TitleView.swift */,
 			);
@@ -216,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15519251276B5D2B0039505D /* VolumeConversion.swift in Sources */,
 				154A8E42275F65660024D47A /* DistanceUnit.swift in Sources */,
 				157FF95B2763D3B2004116B9 /* MassConversion.swift in Sources */,
 				154A8E3F275F65230024D47A /* ValidatedDecimal.swift in Sources */,
@@ -227,12 +242,15 @@
 				15C3080927632AC900D34C02 /* TempCell.swift in Sources */,
 				15C308072763269600D34C02 /* DistanceCell.swift in Sources */,
 				155F986D2761268D00B75764 /* SpeedConversion.swift in Sources */,
+				1551924F276B48C20039505D /* VolumeUnit.swift in Sources */,
 				155F985D2760C62F00B75764 /* DistanceConversion.swift in Sources */,
 				155F98652760CD1C00B75764 /* TempConvertorView.swift in Sources */,
 				15C3080D2763334200D34C02 /* TableHeaderView.swift in Sources */,
 				15C3080B27632C7B00D34C02 /* SpeedCell.swift in Sources */,
+				15519255276B7D200039505D /* VolumeConvertorView.swift in Sources */,
 				157FF9592763C34E004116B9 /* MassUnit.swift in Sources */,
 				157FF95D2763D414004116B9 /* MassConvertorView.swift in Sources */,
+				15519253276B7B100039505D /* VolumeCell.swift in Sources */,
 				157FF9612763D925004116B9 /* TitleView.swift in Sources */,
 				157FF95F2763D421004116B9 /* MassCell.swift in Sources */,
 				155F9868276118C600B75764 /* SpeedConvertorView.swift in Sources */,
@@ -364,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyUnitConvertor/Preview Content\"";
@@ -383,6 +402,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tukgaesoft.MyUnitConvertor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyUnitConvertor/Preview Content\"";
@@ -413,6 +434,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.tukgaesoft.MyUnitConvertor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

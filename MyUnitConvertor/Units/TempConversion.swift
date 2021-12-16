@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TempConversion: Identifiable {
+struct TempConversion: Equatable, Hashable, Identifiable {
     var id: UUID = UUID()
 
     var startValue: Double = 0.0

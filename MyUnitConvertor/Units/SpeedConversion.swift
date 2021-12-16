@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SpeedConversion: Identifiable {
+struct SpeedConversion: Equatable, Hashable, Identifiable {
     var id: UUID = UUID()
 
     var startValue: Double = 0.0

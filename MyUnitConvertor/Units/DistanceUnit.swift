@@ -22,24 +22,15 @@ enum DistanceUnit: String, CaseIterable {
 extension DistanceUnit {
     var conversionFactorToMeter: Double {
         switch self {
-        case .inch:
-            return 0.0254
-        case .foot:
-            return 0.3048
-        case .yard:
-            return 0.9144
-        case .milimeter:
-            return 0.001
-        case .centemeter:
-            return 0.01
-        case .meter:
-            return 1
-        case .kilometer:
-            return 1000
-        case .mile:
-            return 1609.344
-        case .nauticMile:
-            return 1852
+        case .inch: return 0.0254
+        case .foot: return 0.3048
+        case .yard: return 0.9144
+        case .milimeter: return 0.001
+        case .centemeter: return 0.01
+        case .meter: return 1
+        case .kilometer: return 1000
+        case .mile: return 1609.344
+        case .nauticMile: return 1852
         }
     }
 }

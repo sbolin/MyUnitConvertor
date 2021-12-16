@@ -19,15 +19,7 @@ struct ConvertorViews: View {
                         .background {
                             RoundedRectangle(cornerRadius: 6)
                                 .strokeBorder(Color.clear, lineWidth: 0)
-                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.pink.opacity(0.1)))
-                        }
-                        .padding(.horizontal)
-
-                    DistanceConvertorView()
-                        .background {
-                            RoundedRectangle(cornerRadius: 6)
-                                .strokeBorder(Color.clear, lineWidth: 0)
-                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.yellow.opacity(0.1)))
+                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.red.opacity(0.2)))
                         }
                         .padding(.horizontal)
 
@@ -35,7 +27,23 @@ struct ConvertorViews: View {
                         .background {
                             RoundedRectangle(cornerRadius: 6)
                                 .strokeBorder(Color.clear, lineWidth: 0)
-                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.blue.opacity(0.1)))
+                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.yellow.opacity(0.2)))
+                        }
+                        .padding(.horizontal)
+
+                    VolumeConvertorView()
+                        .background {
+                            RoundedRectangle(cornerRadius: 6)
+                                .strokeBorder(Color.clear, lineWidth: 0)
+                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.green.opacity(0.2)))
+                        }
+                        .padding(.horizontal)
+
+                    DistanceConvertorView()
+                        .background {
+                            RoundedRectangle(cornerRadius: 6)
+                                .strokeBorder(Color.clear, lineWidth: 0)
+                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.blue.opacity(0.2)))
                         }
                         .padding(.horizontal)
 
@@ -43,7 +51,7 @@ struct ConvertorViews: View {
                         .background {
                             RoundedRectangle(cornerRadius: 6)
                                 .strokeBorder(Color.clear, lineWidth: 0)
-                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.purple.opacity(0.1)))
+                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.indigo.opacity(0.2)))
                         }
                         .padding(.horizontal)
                 } // VStack
