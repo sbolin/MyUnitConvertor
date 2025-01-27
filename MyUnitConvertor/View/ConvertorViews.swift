@@ -15,14 +15,13 @@ struct ConvertorViews: View {
             ScrollView {
     //            LazyVGrid(columns: [grid], spacing: 10) {
                 VStack {
-                    TempConvertorView()
+                    PressureConvertorView()
                         .background {
                             RoundedRectangle(cornerRadius: 6)
                                 .strokeBorder(Color.clear, lineWidth: 0)
                                 .background(RoundedRectangle(cornerRadius: 6).fill(Color.red.opacity(0.2)))
                         }
                         .padding(.horizontal)
-
                     MassConvertorView()
                         .background {
                             RoundedRectangle(cornerRadius: 6)
@@ -31,7 +30,7 @@ struct ConvertorViews: View {
                         }
                         .padding(.horizontal)
 
-                    VolumeConvertorView()
+                    TempConvertorView()
                         .background {
                             RoundedRectangle(cornerRadius: 6)
                                 .strokeBorder(Color.clear, lineWidth: 0)
@@ -47,11 +46,19 @@ struct ConvertorViews: View {
                         }
                         .padding(.horizontal)
 
-                    SpeedConvertorView()
+                    VolumeConvertorView()
                         .background {
                             RoundedRectangle(cornerRadius: 6)
                                 .strokeBorder(Color.clear, lineWidth: 0)
                                 .background(RoundedRectangle(cornerRadius: 6).fill(Color.indigo.opacity(0.2)))
+                        }
+                        .padding(.horizontal)
+
+                    SpeedConvertorView()
+                        .background {
+                            RoundedRectangle(cornerRadius: 6)
+                                .strokeBorder(Color.clear, lineWidth: 0)
+                                .background(RoundedRectangle(cornerRadius: 6).fill(Color.purple.opacity(0.2)))
                         }
                         .padding(.horizontal)
                 } // VStack

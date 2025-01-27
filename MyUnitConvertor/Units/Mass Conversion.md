@@ -1,4 +1,4 @@
-## Complete list of speed units for conversion
+## Complete list of mass units for conversion
 
 
 1 milligram [mg]                     = 0.000001 kilogram [kg]

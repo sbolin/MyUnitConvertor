@@ -11,9 +11,9 @@ struct TitleView: View {
     var body: some View {
         HStack {
             Image(systemName: "arrow.triangle.2.circlepath.circle")
-                .font(.title3)
+                .font(.system(size: 18, weight: .regular, design: .rounded))
             Text("My Unit Convertor")
-                .font(.title).bold()
+                .font(.system(size: 18, weight: .regular, design: .rounded))
         }
         .foregroundColor(.indigo)
     }

@@ -1,0 +1,90 @@
+//
+//  PressureUnit.swift
+//  MyUnitConvertor
+//
+//  Created by Scott Bolin on 2025-01-25.
+//
+
+import Foundation
+
+enum PressureUnit: String, CaseIterable {
+    case pa = "Pa"
+    case kpa = "kPa"
+    case mpa = "mPa"
+    case gpa = "gPa"
+    case nsm = "Newton/m2"
+    case psi = "psi"
+    case ksi = "ksi"
+    case psf = "psf"
+}
+
+extension PressureUnit {
+    var conversionFactorToPa: Double {
+        switch self {
+        case .pa: return 1.0
+        case .kpa: return 1000
+        case .mpa: return 1000000
+        case .gpa: return 1000000000
+        case .nsm: return 1.0
+        case .psi: return 6894.7572931783
+        case .ksi: return 6894757.2931783
+        case .psf: return 47.8802589804
+        }
+    }
+}
+
+
+/*
+pascal [Pa]
+1 kilopascal [kPa]                      = 1000 pascal [Pa]
+1 bar                                   = 100000 pascal [Pa]
+1 psi [psi]                             = 6894.7572931783 pascal [Pa]
+1 ksi [ksi]                             = 6894757.2931783 pascal [Pa]
+1 Standard atmosphere [atm]             = 101325 pascal [Pa]
+1 exapascal [EPa]                       = 1.0E+18 pascal [Pa]
+1 petapascal [PPa]                      = 1.0E+15 pascal [Pa]
+1 terapascal [TPa]                      = 1000000000000 pascal [Pa]
+1 gigapascal [GPa]                      = 1000000000 pascal [Pa]
+1 megapascal [MPa]                      = 1000000 pascal [Pa]
+1 hectopascal [hPa]                     = 100 pascal [Pa]
+1 dekapascal [daPa]                     = 10 pascal [Pa]
+1 decipascal [dPa]                      = 0.1 pascal [Pa]
+1 centipascal [cPa]                     = 0.01 pascal [Pa]
+1 millipascal [mPa]                     = 0.001 pascal [Pa]
+1 micropascal [µPa]                     = 1.0E-6 pascal [Pa]
+1 nanopascal [nPa]                      = 1.0E-9 pascal [Pa]
+1 picopascal [pPa]                      = 1.0E-12 pascal [Pa]
+1 femtopascal [fPa]                     = 1.0E-15 pascal [Pa]
+1 attopascal [aPa]                      = 1.0E-18 pascal [Pa]
+1 newton/square meter                   = 1 pascal [Pa]
+1 newton/square centimeter              = 10000 pascal [Pa]
+1 newton/square millimeter              = 1000000 pascal [Pa]
+1 kilonewton/square meter               = 1000 pascal [Pa]
+1 millibar [mbar]                       = 100 pascal [Pa]
+1 microbar [µbar]                       = 0.1 pascal [Pa]
+1 dyne/square centimeter                = 0.1 pascal [Pa]
+1 kilogram-force/square meter           = 9.80665 pascal [Pa]
+1 kilogram-force/sq. cm                 = 98066.5 pascal [Pa]
+1 kilogram-force/sq. millimeter         = 9806650 pascal [Pa]
+1 gram-force/sq. centimeter             = 98.0665 pascal [Pa]
+1 ton-force (short)/sq. foot            = 95760.517960678 pascal [Pa]
+1 ton-force (short)/sq. inch            = 13789514.586338 pascal [Pa]
+1 ton-force (long)/square foot          = 107251.78011595 pascal [Pa]
+1 ton-force (long)/square inch          = 15444256.336697 pascal [Pa]
+1 kip-force/square inch                 = 6894757.2931783 pascal [Pa]
+1 pound-force/square foot               = 47.8802589804 pascal [Pa]
+1 pound-force/square inch               = 6894.7572931783 pascal [Pa]
+1 poundal/square foot                   = 1.4881639436 pascal [Pa]
+1 torr [Torr]                           = 133.3223684211 pascal [Pa]
+1 centimeter mercury (0°C)              = 1333.22 pascal [Pa]
+1 millimeter mercury (0°C)              = 133.322 pascal [Pa]
+1 inch mercury (32°F) [inHg]            = 3386.38 pascal [Pa]
+1 inch mercury (60°F) [inHg]            = 3376.85 pascal [Pa]
+1 centimeter water (4°C)                = 98.0638 pascal [Pa]
+1 millimeter water (4°C)                = 9.80638 pascal [Pa]
+1 inch water (4°C) [inAq]               = 249.082 pascal [Pa]
+1 foot water (4°C) [ftAq]               = 2988.98 pascal [Pa]
+1 inch water (60°F) [inAq]              = 248.843 pascal [Pa]
+1 foot water (60°F) [ftAq]              = 2986.116 pascal [Pa]
+1 atmosphere technical [at]             = 98066.500000003 pascal [Pa]
+*/

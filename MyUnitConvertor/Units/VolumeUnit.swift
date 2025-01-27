@@ -23,7 +23,7 @@ enum VolumeUnit: String, CaseIterable {
     case cubic_millimeter = "mm^3"
     case hectoliter = "Hectoliter"
     case dekaliter = "Dekaliter"
-    case deciliter = "Deciliter
+    case deciliter = "Deciliter"
     case centiliter = "Centiliter"
     case cc = "cc"
     case microliter = "Microliter"

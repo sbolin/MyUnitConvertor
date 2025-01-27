@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154A8E2D275F63610024D47A /* MyUnitConvertorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E2C275F63610024D47A /* MyUnitConvertorApp.swift */; };
+		154A8E31275F63620024D47A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154A8E30275F63620024D47A /* Assets.xcassets */; };
+		154A8E34275F63620024D47A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 154A8E33275F63620024D47A /* Preview Assets.xcassets */; };
+		154A8E3B275F63790024D47A /* DistanceConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E3A275F63790024D47A /* DistanceConvertorView.swift */; };
+		154A8E3F275F65230024D47A /* ValidatedDecimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E3E275F65230024D47A /* ValidatedDecimal.swift */; };
+		154A8E42275F65660024D47A /* DistanceUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154A8E41275F65660024D47A /* DistanceUnit.swift */; };
+		1551924F276B48C20039505D /* VolumeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551924E276B48C20039505D /* VolumeUnit.swift */; };
+		15519251276B5D2B0039505D /* VolumeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519250276B5D2B0039505D /* VolumeConversion.swift */; };
+		15519253276B7B100039505D /* VolumeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519252276B7B100039505D /* VolumeCell.swift */; };
+		15519255276B7D200039505D /* VolumeConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15519254276B7D200039505D /* VolumeConvertorView.swift */; };
+		155F985D2760C62F00B75764 /* DistanceConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F985C2760C62F00B75764 /* DistanceConversion.swift */; };
+		155F985F2760C6B200B75764 /* ConvertorViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F985E2760C6B200B75764 /* ConvertorViews.swift */; };
+		155F98612760C83700B75764 /* TempUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F98602760C83700B75764 /* TempUnit.swift */; };
+		155F98632760CC9E00B75764 /* TempConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F98622760CC9E00B75764 /* TempConversion.swift */; };
+		155F98652760CD1C00B75764 /* TempConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F98642760CD1C00B75764 /* TempConvertorView.swift */; };
+		155F9868276118C600B75764 /* SpeedConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F9867276118C600B75764 /* SpeedConvertorView.swift */; };
+		155F986B2761266E00B75764 /* SpeedUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F986A2761266E00B75764 /* SpeedUnit.swift */; };
+		155F986D2761268D00B75764 /* SpeedConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155F986C2761268D00B75764 /* SpeedConversion.swift */; };
+		157FF9592763C34E004116B9 /* MassUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF9582763C34E004116B9 /* MassUnit.swift */; };
+		157FF95B2763D3B2004116B9 /* MassConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF95A2763D3B2004116B9 /* MassConversion.swift */; };
+		157FF95D2763D414004116B9 /* MassConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF95C2763D414004116B9 /* MassConvertorView.swift */; };
+		157FF95F2763D421004116B9 /* MassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF95E2763D421004116B9 /* MassCell.swift */; };
+		157FF9612763D925004116B9 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157FF9602763D925004116B9 /* TitleView.swift */; };
+		15C308072763269600D34C02 /* DistanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C308062763269600D34C02 /* DistanceCell.swift */; };
+		15C3080927632AC900D34C02 /* TempCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3080827632AC900D34C02 /* TempCell.swift */; };
+		15C3080B27632C7B00D34C02 /* SpeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3080A27632C7B00D34C02 /* SpeedCell.swift */; };
+		15C3080D2763334200D34C02 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3080C2763334200D34C02 /* TableHeaderView.swift */; };
+		A28EDC0F2D45C639007F5800 /* PressureUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EDC0E2D45C639007F5800 /* PressureUnit.swift */; };
+		A28EDC112D45E90C007F5800 /* PressureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EDC102D45E90C007F5800 /* PressureCell.swift */; };
+		A28EDC132D45E9B3007F5800 /* PressureConvertorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EDC122D45E9B3007F5800 /* PressureConvertorView.swift */; };
+		A28EDC152D45E9E9007F5800 /* PressureConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EDC142D45E9E9007F5800 /* PressureConversion.swift */; };
+		A28EDC172D45F7CE007F5800 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EDC162D45F7CE007F5800 /* Category.swift */; };
+		A28EDC192D45FED2007F5800 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28EDC182D45FED2007F5800 /* DetailViewModel.swift */; };
+		A28EDC1B2D46166F007F5800 /* Pressure Conversion.md in Resources */ = {isa = PBXBuildFile; fileRef = A28EDC1A2D46166F007F5800 /* Pressure Conversion.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		154A8E29275F63610024D47A /* MyUnitConvertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyUnitConvertor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		154A8E2C275F63610024D47A /* MyUnitConvertorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUnitConvertorApp.swift; sourceTree = "<group>"; };
+		154A8E30275F63620024D47A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		154A8E33275F63620024D47A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		154A8E3A275F63790024D47A /* DistanceConvertorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceConvertorView.swift; sourceTree = "<group>"; };
+		154A8E3E275F65230024D47A /* ValidatedDecimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatedDecimal.swift; sourceTree = "<group>"; };
+		154A8E41275F65660024D47A /* DistanceUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceUnit.swift; sourceTree = "<group>"; };
+		1551924D276B2D600039505D /* Volumn Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Volumn Conversion.md"; sourceTree = "<group>"; };
+		1551924E276B48C20039505D /* VolumeUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeUnit.swift; sourceTree = "<group>"; };
+		15519250276B5D2B0039505D /* VolumeConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConversion.swift; sourceTree = "<group>"; };
+		15519252276B7B100039505D /* VolumeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeCell.swift; sourceTree = "<group>"; };
+		15519254276B7D200039505D /* VolumeConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConvertorView.swift; sourceTree = "<group>"; };
+		155F985C2760C62F00B75764 /* DistanceConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceConversion.swift; sourceTree = "<group>"; };
+		155F985E2760C6B200B75764 /* ConvertorViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertorViews.swift; sourceTree = "<group>"; };
+		155F98602760C83700B75764 /* TempUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempUnit.swift; sourceTree = "<group>"; };
+		155F98622760CC9E00B75764 /* TempConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConversion.swift; sourceTree = "<group>"; };
+		155F98642760CD1C00B75764 /* TempConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempConvertorView.swift; sourceTree = "<group>"; };
+		155F9867276118C600B75764 /* SpeedConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConvertorView.swift; sourceTree = "<group>"; };
+		155F98692761236900B75764 /* Speed Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Speed Conversion.md"; sourceTree = "<group>"; };
+		155F986A2761266E00B75764 /* SpeedUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedUnit.swift; sourceTree = "<group>"; };
+		155F986C2761268D00B75764 /* SpeedConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedConversion.swift; sourceTree = "<group>"; };
+		157FF9572763BBD4004116B9 /* Mass Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Mass Conversion.md"; sourceTree = "<group>"; };
+		157FF9582763C34E004116B9 /* MassUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassUnit.swift; sourceTree = "<group>"; };
+		157FF95A2763D3B2004116B9 /* MassConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassConversion.swift; sourceTree = "<group>"; };
+		157FF95C2763D414004116B9 /* MassConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassConvertorView.swift; sourceTree = "<group>"; };
+		157FF95E2763D421004116B9 /* MassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassCell.swift; sourceTree = "<group>"; };
+		157FF9602763D925004116B9 /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		15C308062763269600D34C02 /* DistanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCell.swift; sourceTree = "<group>"; };
+		15C3080827632AC900D34C02 /* TempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCell.swift; sourceTree = "<group>"; };
+		15C3080A27632C7B00D34C02 /* SpeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCell.swift; sourceTree = "<group>"; };
+		15C3080C2763334200D34C02 /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		15C3080E2763372600D34C02 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		A28EDC0E2D45C639007F5800 /* PressureUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureUnit.swift; sourceTree = "<group>"; };
+		A28EDC102D45E90C007F5800 /* PressureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureCell.swift; sourceTree = "<group>"; };
+		A28EDC122D45E9B3007F5800 /* PressureConvertorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureConvertorView.swift; sourceTree = "<group>"; };
+		A28EDC142D45E9E9007F5800 /* PressureConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureConversion.swift; sourceTree = "<group>"; };
+		A28EDC162D45F7CE007F5800 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A28EDC182D45FED2007F5800 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		A28EDC1A2D46166F007F5800 /* Pressure Conversion.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pressure Conversion.md"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		154A8E26275F63610024D47A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		154A8E20275F63600024D47A = {
+			isa = PBXGroup;
+			children = (
+				154A8E2B275F63610024D47A /* MyUnitConvertor */,
+				154A8E2A275F63610024D47A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		154A8E2A275F63610024D47A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				154A8E29275F63610024D47A /* MyUnitConvertor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		154A8E2B275F63610024D47A /* MyUnitConvertor */ = {
+			isa = PBXGroup;
+			children = (
+				154A8E2C275F63610024D47A /* MyUnitConvertorApp.swift */,
+				A28EDC162D45F7CE007F5800 /* Category.swift */,
+				A28EDC182D45FED2007F5800 /* DetailViewModel.swift */,
+				155F98662760CD2500B75764 /* View */,
+				154A8E40275F65500024D47A /* Units */,
+				154A8E30275F63620024D47A /* Assets.xcassets */,
+				154A8E32275F63620024D47A /* Preview Content */,
+				15C3080E2763372600D34C02 /* TODO.md */,
+			);
+			path = MyUnitConvertor;
+			sourceTree = "<group>";
+		};
+		154A8E32275F63620024D47A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				154A8E33275F63620024D47A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		154A8E40275F65500024D47A /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				154A8E41275F65660024D47A /* DistanceUnit.swift */,
+				155F985C2760C62F00B75764 /* DistanceConversion.swift */,
+				155F986A2761266E00B75764 /* SpeedUnit.swift */,
+				155F986C2761268D00B75764 /* SpeedConversion.swift */,
+				155F98602760C83700B75764 /* TempUnit.swift */,
+				155F98622760CC9E00B75764 /* TempConversion.swift */,
+				157FF9582763C34E004116B9 /* MassUnit.swift */,
+				157FF95A2763D3B2004116B9 /* MassConversion.swift */,
+				A28EDC0E2D45C639007F5800 /* PressureUnit.swift */,
+				A28EDC142D45E9E9007F5800 /* PressureConversion.swift */,
+				1551924E276B48C20039505D /* VolumeUnit.swift */,
+				15519250276B5D2B0039505D /* VolumeConversion.swift */,
+				154A8E3E275F65230024D47A /* ValidatedDecimal.swift */,
+				155F98692761236900B75764 /* Speed Conversion.md */,
+				A28EDC1A2D46166F007F5800 /* Pressure Conversion.md */,
+				157FF9572763BBD4004116B9 /* Mass Conversion.md */,
+				1551924D276B2D600039505D /* Volumn Conversion.md */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		155F98662760CD2500B75764 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				155F985E2760C6B200B75764 /* ConvertorViews.swift */,
+				A28EDC102D45E90C007F5800 /* PressureCell.swift */,
+				A28EDC122D45E9B3007F5800 /* PressureConvertorView.swift */,
+				157FF95E2763D421004116B9 /* MassCell.swift */,
+				157FF95C2763D414004116B9 /* MassConvertorView.swift */,
+				15C3080827632AC900D34C02 /* TempCell.swift */,
+				155F98642760CD1C00B75764 /* TempConvertorView.swift */,
+				15C308062763269600D34C02 /* DistanceCell.swift */,
+				154A8E3A275F63790024D47A /* DistanceConvertorView.swift */,
+				15C3080A27632C7B00D34C02 /* SpeedCell.swift */,
+				155F9867276118C600B75764 /* SpeedConvertorView.swift */,
+				15519252276B7B100039505D /* VolumeCell.swift */,
+				15519254276B7D200039505D /* VolumeConvertorView.swift */,
+				15C3080C2763334200D34C02 /* TableHeaderView.swift */,
+				157FF9602763D925004116B9 /* TitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		154A8E28275F63610024D47A /* MyUnitConvertor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154A8E37275F63620024D47A /* Build configuration list for PBXNativeTarget "MyUnitConvertor" */;
+			buildPhases = (
+				154A8E25275F63610024D47A /* Sources */,
+				154A8E26275F63610024D47A /* Frameworks */,
+				154A8E27275F63610024D47A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyUnitConvertor;
+			productName = MyUnitConvertor;
+			productReference = 154A8E29275F63610024D47A /* MyUnitConvertor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		154A8E21275F63600024D47A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					154A8E28275F63610024D47A = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 154A8E24275F63600024D47A /* Build configuration list for PBXProject "MyUnitConvertor 2" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 154A8E20275F63600024D47A;
+			productRefGroup = 154A8E2A275F63610024D47A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				154A8E28275F63610024D47A /* MyUnitConvertor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		154A8E27275F63610024D47A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				154A8E34275F63620024D47A /* Preview Assets.xcassets in Resources */,
+				A28EDC1B2D46166F007F5800 /* Pressure Conversion.md in Resources */,
+				154A8E31275F63620024D47A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		154A8E25275F63610024D47A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15519251276B5D2B0039505D /* VolumeConversion.swift in Sources */,
+				154A8E42275F65660024D47A /* DistanceUnit.swift in Sources */,
+				157FF95B2763D3B2004116B9 /* MassConversion.swift in Sources */,
+				154A8E3F275F65230024D47A /* ValidatedDecimal.swift in Sources */,
+				155F98632760CC9E00B75764 /* TempConversion.swift in Sources */,
+				A28EDC0F2D45C639007F5800 /* PressureUnit.swift in Sources */,
+				154A8E3B275F63790024D47A /* DistanceConvertorView.swift in Sources */,
+				A28EDC152D45E9E9007F5800 /* PressureConversion.swift in Sources */,
+				155F985F2760C6B200B75764 /* ConvertorViews.swift in Sources */,
+				A28EDC132D45E9B3007F5800 /* PressureConvertorView.swift in Sources */,
+				155F986B2761266E00B75764 /* SpeedUnit.swift in Sources */,
+				A28EDC172D45F7CE007F5800 /* Category.swift in Sources */,
+				154A8E2D275F63610024D47A /* MyUnitConvertorApp.swift in Sources */,
+				A28EDC192D45FED2007F5800 /* DetailViewModel.swift in Sources */,
+				15C3080927632AC900D34C02 /* TempCell.swift in Sources */,
+				15C308072763269600D34C02 /* DistanceCell.swift in Sources */,
+				155F986D2761268D00B75764 /* SpeedConversion.swift in Sources */,
+				1551924F276B48C20039505D /* VolumeUnit.swift in Sources */,
+				155F985D2760C62F00B75764 /* DistanceConversion.swift in Sources */,
+				155F98652760CD1C00B75764 /* TempConvertorView.swift in Sources */,
+				15C3080D2763334200D34C02 /* TableHeaderView.swift in Sources */,
+				15C3080B27632C7B00D34C02 /* SpeedCell.swift in Sources */,
+				15519255276B7D200039505D /* VolumeConvertorView.swift in Sources */,
+				157FF9592763C34E004116B9 /* MassUnit.swift in Sources */,
+				157FF95D2763D414004116B9 /* MassConvertorView.swift in Sources */,
+				15519253276B7B100039505D /* VolumeCell.swift in Sources */,
+				157FF9612763D925004116B9 /* TitleView.swift in Sources */,
+				A28EDC112D45E90C007F5800 /* PressureCell.swift in Sources */,
+				157FF95F2763D421004116B9 /* MassCell.swift in Sources */,
+				155F9868276118C600B75764 /* SpeedConvertorView.swift in Sources */,
+				155F98612760C83700B75764 /* TempUnit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		154A8E35275F63620024D47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		154A8E36275F63620024D47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		154A8E38275F63620024D47A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyUnitConvertor/Preview Content\"";
+				DEVELOPMENT_TEAM = S3T93X6AAH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tukgaesoft.MyUnitConvertor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		154A8E39275F63620024D47A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MyUnitConvertor/Preview Content\"";
+				DEVELOPMENT_TEAM = S3T93X6AAH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.tukgaesoft.MyUnitConvertor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		154A8E24275F63600024D47A /* Build configuration list for PBXProject "MyUnitConvertor 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154A8E35275F63620024D47A /* Debug */,
+				154A8E36275F63620024D47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154A8E37275F63620024D47A /* Build configuration list for PBXNativeTarget "MyUnitConvertor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154A8E38275F63620024D47A /* Debug */,
+				154A8E39275F63620024D47A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 154A8E21275F63600024D47A /* Project object */;
+}
